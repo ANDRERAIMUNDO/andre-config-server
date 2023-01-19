@@ -1,6 +1,12 @@
 spring:
  application:
   name: greeting-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        -'*'
 greeting-service:
- greeting: "prod"
+ greeting: "Pronto"
  default-value: "word"
